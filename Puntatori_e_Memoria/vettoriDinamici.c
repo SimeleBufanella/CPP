@@ -35,7 +35,7 @@ int main() {
     p = (int*) malloc(numElem * sizeof(int));  // Corrected malloc syntax
     for(int i = 0; i<numElem;++i)
     {
-        p[i] = 1; 
+        p[i] = i; 
     }
     printf("Array dinamico con malloc: ");
     printArray(p, numElem);
@@ -46,7 +46,7 @@ int main() {
     p = (int*) calloc(numElem, sizeof(int));  // Corrected malloc syntax
     for(int i = 0; i<numElem;++i)
     {
-        p[i] = 1; 
+        p[i] = i; 
     }
     printf("Array dinamico con calloc: ");
     printArray(p, numElem);

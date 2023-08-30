@@ -59,7 +59,7 @@ int main() {
    // p = (int*) realloc(p, numElem * sizeof(int));
     for(int i = 0; i<7;++i)
     {
-        p[i] = 1; 
+        p[i] = i; 
     }
     printf("Dimensione modificata con realloc: ");
     printArray(p, 7);

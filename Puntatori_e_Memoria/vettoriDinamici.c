@@ -7,7 +7,7 @@ void printArray(int a[], int dim)
     printf("\n\t[ ");
 
     for(int i = 0; i<dim; ++i)
-        printf("%d", a[i]);
+        printf("%d ", a[i]);
 
     printf("] \n\n");
 }
@@ -56,13 +56,18 @@ int main() {
 
     numElem = 15;
 
-   // p = (int*) realloc(p, numElem * sizeof(int));
-    for(int i = 0; i<7;++i)
+    int *temp;
+
+    //temp = realloc(p, numElem*sizeof(int));
+
+
+   p = (int*) realloc(p, numElem * sizeof(int));
+    for(int i = 0; i<numElem;++i)
     {
         p[i] = i; 
     }
     printf("Dimensione modificata con realloc: ");
-    printArray(p, 7);
+    printArray(p, numElem);
 
 
 
